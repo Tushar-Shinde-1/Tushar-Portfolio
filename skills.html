@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tushar's Skills</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skills.css" />
+</head>
+<body>
+  
+     <nav>
+        <div class="container navbar">
+            <div class="nav-left">
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <div class="logo"> <span>My</span> Strength and Power! </div>   </div>
+            <ul class="nav-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" >Projects</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  <section class="skills-section">
+   
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="skillModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+    <script src="js/main.js"></script>
+  <script src="js/skills.js"></script>
+</body>
+</html>
