@@ -1,0 +1,172 @@
+.contact-section {
+    padding: 60px 20px;
+    background: linear-gradient(-45deg, #f3e8ff, #dfdde4, #dfd4eb, #e7ddf0, #e2ccf6);
+    background-size: 400% 400%;
+    animation: purpleGradientShift 15s ease infinite;
+    text-align: center;
+  }
+  
+  
+  
+
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 0px 0px 350px 350px;
+    padding: 40px;
+    box-shadow: 0 15px 30px rgba(164, 105, 219, 0.3);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .contact-title {
+    font-size: 32px;
+    color: #5B2C6F;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(164, 105, 219, 0.3);
+  }
+  
+  .contact-subtext {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #6b4d7e;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-item {
+    background: #f3e8ff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(164, 105, 219, 0.35);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+    /* overflow:scroll; */
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(164, 105, 219, 0.45);
+  }
+  
+  .contact-item i {
+    font-size: 20px;
+    color: #a469db;
+    margin-bottom: 8px;
+  }
+  
+  .contact-item span {
+    font-weight: bold;
+    color: #5B2C6F;
+  }
+  
+  .contact-item a,
+  .contact-item p {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .contact-item a:hover {
+    color: #8836c7;
+    text-decoration: underline;
+  }
+  .contact-section {
+    position: relative; /* Add this line */
+    padding: 60px 20px;
+    background: linear-gradient(-45deg, #f3e8ff, #e0cfff, #e7dfee, #dfdae4, #e2d2f1);
+    background-size: 400% 400%;
+    animation: purpleGradientShift 15s ease infinite;
+    text-align: center;
+    overflow: hidden; /* Prevent scrollbars from animation */
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* in contact.css */
+
+.contact-item {
+  display: flex;
+  flex-direction: row;      /* was column */
+  align-items: center;      /* vertically center icon + text */
+  gap: 10px;                /* space between elements */
+}
+@media (max-width: 447px) {
+  .contact-item {
+    overflow: scroll;
+  }
+}
+@media (max-width: 768px) {
+  
+
+}
+@keyframes purpleGradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* Bubble Container */
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .bubbles span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: bubbleFall 10s linear infinite;
+    bottom: 100%;
+    left: calc(var(--i) * 10%);
+    animation-delay: calc(var(--i) * 0.5s);
+  }
+  
+  @keyframes bubbleFall {
+    0% {
+      transform: translateY(-100px) scale(1);
+      background-color: rgb(255, 255, 255);
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      background-color: rgb(255, 255, 255);
+    }
+    100% {
+      transform: translateY(100vh) scale(9.5);
+      opacity: 0;
+    }
+  }
+ 
+  .contact-container {
+    position: relative;
+    z-index: 1;
+  }
+  
