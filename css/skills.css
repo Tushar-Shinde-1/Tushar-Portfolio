@@ -211,13 +211,19 @@
   .modal-content {
     background-color: #fff;
     margin: 10% auto;
+    margin-top: 25%;
     padding: 30px;
     border-radius: 10px;
     width: 80%;
     max-width: 500px;
     position: relative;
   }
-  
+  @media (max-width: 768px){
+    .modal-content{
+      margin-top: 60%;
+    
+  }
+}
   .modal-content h3 {
     color: #8e44ad;
     margin-bottom: 10px;
