@@ -86,11 +86,12 @@ body{
 }
 .btn {
     width: fit-content;
-    height: 20px;
+    height:fit-content;
     background-color: rgb(164, 105, 219);
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
+    text-align: center;
     font-weight: 600;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
@@ -217,5 +218,20 @@ body{
         linear-gradient(to left, transparent 90%, rgb(255, 255, 255)),
         linear-gradient(to right, transparent 90%, rgb(255, 255, 255));
     }
+   
   }
-  
+  @media (max-width: 340px)
+  {
+    .profile-img{
+
+        top:82%;
+        width:200px;
+        height: 200px;
+        
+    }
+    .description-box
+    {
+text-align: left;
+margin: 12px;
+    }
+  }
